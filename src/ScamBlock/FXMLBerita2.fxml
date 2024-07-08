@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="798.0" style="-fx-background-color: #EEF5FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScamBlock.FXMLBerita2">
+   <children>
+      <ImageView fitHeight="181.0" fitWidth="267.0" layoutX="260.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/GambarBerita2.jpeg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="43.0" layoutY="273.0" prefHeight="238.0" prefWidth="722.0" style="-fx-background-color: #B4D4FF;">
+         <children>
+            <TextArea layoutX="6.0" layoutY="21.0" prefHeight="193.0" prefWidth="709.0" text="Dikutip dari website Kementerian Komunikasi dan Informatika (Kominfo), salah satu penipuan daring yang kerap terjadi saat &#10;ini disalurkan melalui pemanfaatan fitur chat. Pada modus kali ini, biasanya penipu berusaha memanipulasi korban untuk &#10;mengunduh sebuah Android Package Kit (apk) atau berkas paket aplikasi Android. Modus operandi pada penipuan apk ini &#10;digerakkan melalui pengiriman sebuah file atau dokumen yang mengatasnamakan sebuah perusahaan. Ketika paket aplikasi &#10;ini terunduh, tanpa disadari pengguna memberikan persetujuan untuk menginstal aplikasi palsu serta mengizinkan aplikasi&#10;ter-instal tersebut untuk mengakses aplikasi yang terdapat di ponsel pengguna, umumnya yakni melalui perpesanan.&#10;&#10;Di samping itu, masih terdapat berbagai modus penipuan lainnya. Mulai dari penyebaran link phising, investasi &#10;menjanjikan, pemulihan akun dompet digital, dan masih banyak lainnya." />
+         </children>
+      </Pane>
+      <Text fill="#86b6f6" layoutX="164.0" layoutY="49.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Mengenal Jenis Penipuan Online Zaman Sekarang" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="17.0" layoutY="15.0" mnemonicParsing="false" onAction="#switchToBeritaArtikel" prefHeight="53.0" prefWidth="54.0" styleClass="inner_pane" stylesheets="@vieDesign.css">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="45.0" onDragDetected="#switchToBeritaArtikel" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Logo%20Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

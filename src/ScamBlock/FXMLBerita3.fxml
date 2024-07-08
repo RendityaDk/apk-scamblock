@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="798.0" style="-fx-background-color: #EEF5FF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScamBlock.FXMLBerita3">
+   <children>
+      <ImageView fitHeight="168.0" fitWidth="267.0" layoutX="260.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/GambarBerita3.jpeg.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="43.0" layoutY="273.0" prefHeight="238.0" prefWidth="722.0" style="-fx-background-color: #B4D4FF;">
+         <children>
+            <TextArea layoutX="6.0" layoutY="21.0" prefHeight="193.0" prefWidth="709.0" text="Seorang warga Kota Blitar menjadi korban penipuan dengan modus like and follow di TikTok dan Instagram (IG). Tak &#10;tanggung-tanggung, korban mengalami kerugian hingga Rp 200 juta. Wakapolres Blitar Kota Kompol I Gede Suartika &#10;membenarkan adanya laporan seorang warga yang menjadi korban penipuan online ini. Dalam laporan itu, korban mengaku &#10;tertipu dengan salah satu akun di media sosial.&#10;&#10;&quot;Iya, kemarin ada yang lapor satu orang, tapi kalau kita pantau di TikTok dan Instagram, kejadian ini sudah banyak,&quot; ujarnya &#10;kepada awak media, Senin (24/6/2024). Gede mengatakan, korban awalnya ditawari pekerjaan dari seseorang di sebuah &#10;akun. Adapun tugasnya yakni melakukan like dan follow akun di media sosial. Korban yang tergiur pekerjaan mudah itu &#10;dijanjikan mendapat upah setiap melakukan tugasnya." />
+         </children>
+      </Pane>
+      <Text fill="#86b6f6" layoutX="236.0" layoutY="49.0" smooth="false" strokeType="OUTSIDE" strokeWidth="0.0" text="Warga Kota Jawa Tertipu 200juta!" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Button layoutX="21.0" layoutY="21.0" mnemonicParsing="false" onAction="#switchToBeritaArtikel" prefHeight="49.0" prefWidth="61.0" styleClass="inner_pane" stylesheets="@vieDesign.css">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="45.0" onDragDetected="#switchToBeritaArtikel" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/Logo%20Back.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

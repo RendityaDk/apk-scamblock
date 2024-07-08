@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="798.0" stylesheets="@vieDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScamBlock.FXMLLapor">
+   <children>
+      <VBox prefHeight="532.0" prefWidth="230.0">
+         <children>
+            <AnchorPane fx:id="side_angkerpane" prefHeight="527.0" prefWidth="278.0" styleClass="side_angkerpane" stylesheets="@vieDesign.css">
+               <children>
+                  <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="105.0" mnemonicParsing="false" onAction="#switchToHome" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane3" stylesheets="@vieDesign.css" text="  Home" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="380.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="105.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="187.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane2" stylesheets="@vieDesign.css" text="   Lapor" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="187.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Lapor.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="21.0" layoutY="247.0" mnemonicParsing="false" onAction="#switchToKonsultasi" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane3" stylesheets="@vieDesign.css" text="  Konsultasi" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Konsultasi.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="16.8" layoutY="304.0" mnemonicParsing="false" onAction="#switchToBerita" prefHeight="47.0" prefWidth="194.0" styleClass="inner_pane3" stylesheets="@vieDesign.css" text="  Berita" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="304.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Berita.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="21.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToPengaturan" prefHeight="47.0" prefWidth="185.0" styleClass="inner_pane3" stylesheets="@vieDesign.css" text="  Pengaturan" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="103.59999999999995" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="381.6">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Setting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutY="163.0" prefHeight="6.0" prefWidth="230.0" />
+                  <Separator layoutY="364.0" prefHeight="6.0" prefWidth="230.0" />
+                  <Pane fx:id="inner_pane" layoutX="22.0" layoutY="30.0" prefHeight="54.0" prefWidth="188.0" styleClass="inner_pane" stylesheets="@ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.80000000000004" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Button layoutY="-4.0" mnemonicParsing="false" onAction="#switchToProfil" prefHeight="62.0" prefWidth="188.0" styleClass="inner_pane" stylesheets="@vieDesign.css" />
+                        <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="9.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/profile.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="15.0" prefHeight="24.0" prefWidth="101.0" text="Profil">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children></AnchorPane>
+         </children>
+      </VBox>
+      <Pane prefHeight="532.0" prefWidth="569.0">
+         <children>
+            <Pane layoutX="22.0" layoutY="14.0" prefHeight="107.0" prefWidth="531.0" styleClass="inner_pane" stylesheets="@vieDesign.css">
+               <children>
+                  <Label layoutX="97.0" layoutY="5.0" prefHeight="37.0" prefWidth="394.0" text="Call Center Kepolisian Indonesia" textFill="#2a76df">
+                     <font>
+                        <Font name="System Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="172.0" layoutY="46.0" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane3">
+                     <children>
+                        <Label layoutX="85.0" layoutY="2.0" prefHeight="37.0" prefWidth="64.0" text="110" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Black" size="29.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="43.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/call.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Pane layoutX="22.0" layoutY="130.0" prefHeight="385.0" prefWidth="531.0" styleClass="inner_pane" stylesheets="@vieDesign.css">
+               <children>
+                  <Label layoutX="184.0" prefHeight="37.0" prefWidth="163.0" text="Format Pelaporan" textFill="#2a76df">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="37.0" prefHeight="27.0" prefWidth="119.0" text="Waktu kejadian" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="89.0" prefHeight="27.0" prefWidth="119.0" text="Apa yang terjadi" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="kejadian" layoutX="14.0" layoutY="116.0" prefHeight="25.0" prefWidth="486.0" />
+                  <Label layoutX="14.0" layoutY="141.0" prefHeight="27.0" prefWidth="119.0" text="Kronologi Kejadian" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="230.0" prefHeight="27.0" prefWidth="119.0" text="Nama Lengkap" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="14.0" layoutY="257.0" prefHeight="25.0" prefWidth="222.0" />
+                  <Label layoutX="16.0" layoutY="205.0" prefHeight="37.0" prefWidth="73.0" text="Pelapor" textFill="#2a76df">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="279.0" prefHeight="27.0" prefWidth="119.0" text="Alamat" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="address" layoutX="14.0" layoutY="307.0" prefHeight="25.0" prefWidth="222.0" />
+                  <Label layoutX="273.0" layoutY="230.0" prefHeight="27.0" prefWidth="119.0" text="Jenis kelamin" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="gender" layoutX="273.0" layoutY="257.0" prefHeight="25.0" prefWidth="230.0" />
+                  <Label layoutX="273.0" layoutY="280.0" prefHeight="27.0" prefWidth="119.0" text="No. Handphone" textFill="#2a76df">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="number" layoutX="273.0" layoutY="307.0" prefHeight="25.0" prefWidth="230.0" />
+                  <Button layoutX="422.0" layoutY="346.0" mnemonicParsing="false" onAction="#kirim" prefHeight="27.0" prefWidth="79.0" styleClass="buttonhome-style" stylesheets="@vieDesign.css" text="Kirim" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <DatePicker fx:id="time" layoutX="14.0" layoutY="64.0" stylesheets="@vieDesign.css" />
+                  <TextArea fx:id="kronologi" layoutX="14.0" layoutY="165.0" prefHeight="43.0" prefWidth="486.0" />
+                  <Button layoutX="333.0" layoutY="346.0" mnemonicParsing="false" onAction="#switchToTable" prefHeight="27.0" prefWidth="79.0" styleClass="buttonhome-style" stylesheets="@vieDesign.css" text="Table" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>

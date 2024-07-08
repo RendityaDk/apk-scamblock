@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="532.0" prefWidth="798.0" stylesheets="@vieDesign.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ScamBlock.FXMLKonsultasi">
+   <children>
+      <VBox prefHeight="532.0" prefWidth="230.0">
+         <children>
+            <AnchorPane fx:id="side_angkerpane" prefHeight="534.0" prefWidth="230.0" styleClass="side_angkerpane" stylesheets="@../../../ScamBlock/src/ScamBlock/vieDesign.css">
+               <children>
+                  <Pane fx:id="inner_pane" layoutX="22.0" layoutY="30.0" prefHeight="54.0" prefWidth="188.0" styleClass="inner_pane" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" AnchorPane.leftAnchor="22.0" AnchorPane.rightAnchor="22.80000000000004" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Button layoutY="-4.0" mnemonicParsing="false" onAction="#switchToProfil" prefHeight="62.0" prefWidth="188.0" styleClass="inner_pane" stylesheets="@vieDesign.css" />
+                        <ImageView fitHeight="32.0" fitWidth="33.0" layoutX="9.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/profile.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="56.0" layoutY="15.0" prefHeight="24.0" prefWidth="101.0" text="Profil">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button alignment="TOP_LEFT" layoutX="17.6" layoutY="107.2" mnemonicParsing="false" onAction="#switchToHome" prefHeight="47.0" prefWidth="194.0" styleClass="inner_pane3" text="  Home" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="380.0" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="105.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <stylesheets>
+                        <URL value="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" />
+                        <URL value="@../../../ScamBlock/src/ScamBlock/vieDesign.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="187.0" mnemonicParsing="false" onAction="#switchToLapor" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane3" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" text="   Lapor" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Lapor.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="21.0" layoutY="247.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane2" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" text="  Konsultasi" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Konsultasi.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="21.0" layoutY="304.0" mnemonicParsing="false" onAction="#switchToBerita" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane3" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" text="  Berita" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="182.39999999999998" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="304.0">
+                     <graphic>
+                        <ImageView fitHeight="34.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Berita.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="TOP_LEFT" layoutX="18.0" layoutY="382.0" mnemonicParsing="false" onAction="#switchToPengaturan" prefHeight="47.0" prefWidth="188.0" styleClass="inner_pane3" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" text="  Pengaturan" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="21.0">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/Setting.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Button>
+                  <Separator layoutY="163.0" prefHeight="6.0" prefWidth="230.0" />
+                  <Separator layoutY="364.0" prefHeight="6.0" prefWidth="230.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Pane prefHeight="532.0" prefWidth="569.0">
+         <children>
+            <Pane layoutX="18.0" layoutY="13.0" prefHeight="425.0" prefWidth="531.0" styleClass="inner_pane" stylesheets="@../../../ScamBlock/src/ScamBlock/vieDesign.css">
+               <children>
+                  <Pane layoutX="14.0" layoutY="450.0" prefHeight="40.0" prefWidth="503.0" styleClass="inner_pane4" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css">
+                     <children>
+                        <Button layoutX="444.0" minWidth="53.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="41.0" prefWidth="32.0" styleClass="inner_pane4" stylesheets="@../../../ScamBlock/src/ScamBlock/ScamBlock/ScamBlock/ScamBlock/src/ScamBlock/vieDesign.css" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="25.0" fitWidth="25.0" onDragDetected="#sendMessage" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/paper_11105622.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <TextField fx:id="inputField" layoutX="27.0" layoutY="4.0" prefHeight="32.0" prefWidth="406.0" styleClass="inner_pane5" stylesheets="@vieDesign.css">
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextField>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="33.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="283.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="75.0" fitWidth="75.0" layoutX="283.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" />
+                  <TextArea fx:id="chatArea" layoutX="-7.0" layoutY="-2.0" prefHeight="425.0" prefWidth="540.0" styleClass="inner_pane5" stylesheets="@vieDesign.css">
+                     <font>
+                        <Font size="14.0" />
+                     </font></TextArea>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</HBox>
